@@ -41,7 +41,7 @@ jobsListingSection.addEventListener('click', function (event) {
 // })
 
 
-
+//DONE: Tarea Filtro Tecnologia seccion JS
 
 const filter = document.querySelector('#filter-technology');
 
