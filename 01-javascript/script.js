@@ -24,7 +24,7 @@
 
 const jobsListingSection = document.querySelector('.jobs-listings')
 
-jobsListingSection.addEventListener('click', function(event) {
+jobsListingSection.addEventListener('click', function (event) {
   const element = event.target
 
   if (element.classList.contains('button-apply-job')) {
@@ -34,8 +34,27 @@ jobsListingSection.addEventListener('click', function(event) {
   }
 })
 
-const filter = document.querySelector('#filter-technology')
+// const filter = document.querySelector('#filter-technology')
 
-filter.addEventListener('change', function () {
-  console.log(filter.value)
+// filter.addEventListener('change', function () {
+//   console.log(filter.value)
+// })
+
+
+
+
+const filter = document.querySelector('#filter-technology');
+
+
+filter.addEventListener('change', () => {
+  const value = filter.value;
+
+  [...jobsListingSection.children].forEach(job => {
+    if (!job.textContent.toLowerCase().includes(value.toLowerCase())) {
+      job.style.display = 'none'
+    }
+    else {
+      job.style.display = 'flex'
+    }
+  })
 })

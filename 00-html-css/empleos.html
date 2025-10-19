@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DevJobs - Empleos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra las mejores ofertas de trabajo para desarrolladores en DevJobs.">
+    <link rel="stylesheet" href="./search-styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3 class="logo">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#09f"
+                            d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3" />
+                    </svg>
+                    DevJobs
+                </a>
+            </h3>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="">Empleos</a>
+                <a href="">Empresas</a>
+                <a href="">Salarios</a>
+            </nav>
+        </div>
+        <div>
+            <a id="upload-cv" href="">Subir CV</a>
+            <a id="profile" href="#"><img src="/00-html-css/1693867-00-A_1.jpg" /></a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Encuentra tu próximo trabajo</h1>
+            <p>Explora miles de oportunidades en el sector tecnológico.</p>
+
+            <form role="search">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <input id="search-input" required type="text" placeholder="Buscar trabajos, empresas o habilidades">
+                </div>
+                <div id="select-input">
+                    <select>
+                        <option value="">Tecnológia</option>
+                        <option value="React">React</option>
+                        <option value="Angular">Angular</option>
+                        <option value="Vue">Vue</option>
+                    </select>
+                    <select>
+                        <option value="">Ubicación</option>
+                        <option value="React">Cuba</option>
+                        <option value="Angular">España</option>
+                        <option value="Vue">United States</option>
+                    </select>
+                    <select>
+                        <option value="">Tipo de contrato</option>
+                        <option value="React">Presencial</option>
+                        <option value="Angular">Digital</option>
+                    </select>
+                    <select>
+                        <option value="">Nivel de experiencia</option>
+                        <option value="React">1 año</option>
+                        <option value="Angular">2 año</option>
+                        <option value="Vue">5años +</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Resultado de la búsqueda</h2>
+            <div id="items">
+                <article>
+                    <header>
+                        <div>
+                            <h3>Ingeniero de Software</h3>
+                            <p>Tech Solutions | Inc. Remoto</p>
+                        </div>
+                        <button>Aplicar</button>
+                    </header>
+                    <p>Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
+                        JavaScript,
+                        React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas
+                        habilidades
+                        de comunicación.</p>
+                </article>
+                <article>
+                    <header>
+                        <div>
+                            <h3>Ingeniero de Software</h3>
+                            <p>Tech Solutions | Inc. Remoto</p>
+                        </div>
+                        <button>Aplicar</button>
+                    </header>
+                    <p>Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
+                        JavaScript,
+                        React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas
+                        habilidades
+                        de comunicación.</p>
+                </article>
+                <article>
+                    <header>
+                        <div>
+                            <h3>Ingeniero de Software</h3>
+                            <p>Tech Solutions | Inc. Remoto</p>
+                        </div>
+                        <button>Aplicar</button>
+                    </header>
+                    <p>Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
+                        JavaScript,
+                        React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas
+                        habilidades
+                        de comunicación.</p>
+                </article>
+                <article>
+                    <header>
+                        <div>
+                            <h3>Ingeniero de Software</h3>
+                            <p>Tech Solutions | Inc. Remoto</p>
+                        </div>
+                        <button>Aplicar</button>
+                    </header>
+                    <p>Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
+                        JavaScript,
+                        React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas
+                        habilidades
+                        de comunicación.</p>
+                </article>
+            </div>
+
+            <!-- <nav aria-label="Paginación">
+                <ul class="pagination">
+                    <li><a href="#" class="prev" aria-label="Página anterior">
+                            < </a>
+                    </li>
+                    <li><a href="#" class="page-active" aria-current="page">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+
+                    <li><a href="#" class="next" aria-label="Página siguiente">></a></li>
+                </ul>
+            </nav> -->
+
+            <!-- DONE: Tarea de paginador seccion HTML - CSS -->
+            <!-- <nav class="pagination">
+                <a href="#">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 6l-6 6l6 6" />
+                    </svg>
+                </a>
+                <a href="#" class="first-page">First Page</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="is-active">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#" class="last-page">Last Page</a>
+                <a href="#">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" />
+                    </svg>
+                </a>
+
+            </nav> -->
+        </section>
+    </main>
+</body>
+
+</html>
