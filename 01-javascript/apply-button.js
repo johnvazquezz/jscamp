@@ -59,23 +59,7 @@ jobsListingSection.addEventListener('click', function (event) {
 // })
 
 
-//DONE: Tarea Filtro Tecnologia seccion JS
 
-const filter = document.querySelector('#filter-technology');
-
-
-filter.addEventListener('change', () => {
-  const value = filter.value;
-
-  [...jobsListingSection.children].forEach(job => {
-    if (!job.textContent.toLowerCase().includes(value.toLowerCase())) {
-      job.style.display = 'none'
-    }
-    else {
-      job.style.display = 'flex'
-    }
-  })
-})
 // const searchForm = document.querySelector('#empleos-search-form')
 
 // searchForm.addEventListener('submit', function(event) {
